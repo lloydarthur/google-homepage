@@ -1,0 +1,37 @@
+.head-left{
+  grid-area: head-left;
+}
+.head-right{
+  grid-area: head-right;
+  text-align: end;
+}
+.body-center{
+  grid-area: body-center;
+  display:grid;
+  grid-area: body-center;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+.foot-left{
+  grid-area: foot-left;
+  display: grid;
+  align-items: end;
+}
+.foot-right{
+  grid-area: foot-right;
+  display: grid;
+  text-align: end;
+  align-items: end;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  grid-template-areas:
+    "head-left . head-right"
+    ". body-center ."
+    "foot-left . foot-right";
+}
