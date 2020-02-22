@@ -1,37 +1,54 @@
-.head-left{
-  grid-area: head-left;
+#header {
+  display: flex;
+  flex-direction: row;
+  
 }
-.head-right{
-  grid-area: head-right;
-  text-align: end;
+#head-left{
+  display:flex;
+  width: 50vw;
+  justify-content: flex-start;
 }
-.body-center{
-  grid-area: body-center;
-  display:grid;
-  grid-area: body-center;
-  justify-self: center;
+#head-right{
+  display:flex;
+  width: 50vw;
+  justify-content: flex-end;
+}
+#body{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  height: 50vw;
 }
-.foot-left{
-  grid-area: foot-left;
-  display: grid;
-  align-items: end;
+#search-bar{
+  width:60vw;
+  height:4vw;
+  border-radius: 25px;
+  border: 2px solid #dbdbdb;
 }
-.foot-right{
-  grid-area: foot-right;
-  display: grid;
-  text-align: end;
-  align-items: end;
+#footer{
+  display:flex;
+  flex-direction: row;
+  width: 1fr;
+}
+#foot-left{
+  display:flex;
+  width: 50vw;
+  justify-content: flex-start;
+}
+#foot-right{
+  display:flex;
+  width: 50vw;
+  justify-content: flex-end;
+}
+.button {
+  background-color: #dbdbdb;
+  border-radius:4px;
+  padding: 5px 10px;
+  border: 0;
+  box-shadow: none;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr 2fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  
-  grid-template-areas:
-    "head-left . head-right"
-    ". body-center ."
-    "foot-left . foot-right";
+.button:hover {
+  border: 1px solid #808080;
 }
