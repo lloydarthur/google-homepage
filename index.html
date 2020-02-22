@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title></title>
+    <title>Google Homepage</title>
   </head>
   <body>
-    <div id="viewport">
-      
-      <div id="header">
-        <div id="head-left">
-          <a href="">About</a>
-          &nbsp;&nbsp;
-          <a href="">Store</a>
-        </div>
-        <div id="head-right">
-          <a href="">Gmail</a></a>
-          &nbsp;&nbsp;
-          <a href="">Images</a>
-          &nbsp;&nbsp;
+    <div class="viewport">
+      <div class="header">
+        <ul class="head-left">
+          <li><a href="">About</a></li>
+          <li><a href="">Store</a></li>
+        </ul>
+        <ul class="head-right">
+          <li><a href="">Gmail</a></li>
+          <li><a href="">Images</a></li>
           <button>Sign In</button>
-        </div>
+        </ul>
       </div>
       
-      <div id="body">
-        <img src="googlelogo.png" alt="Google" />
-        <br>
-        <input id="search-bar">
-        <br>
-        <div>
-          <button class="button">Google Search</button>
-          <button class="button">I'm Feeling Lucky</button>
+      <div class="main">
+        <div class="logo">
+          <img src="googlelogo.png" alt="Google" />
         </div>
-        <div>
-          <br>
-          Google offered in: <a href="">Francais</a>
+        <div class="search">
+          <i class="fas fa-search search-icon"></i>
+          <input class="search-bar" size="30">
+          <img class="mic" src="mic.png" alt="#">
+        </div>
+        <div class="buttons">
+          <input type="button" value="Google Search">
+          <input type="button" value="I'm Feeling Lucky">
         </div>
       </div>
     
       <footer>
-      <div id="footer">
-        <div id="foot-left">
-          <a href="">Advertising</a>
-          &nbsp;&nbsp;
-          <a href="">Business</a>
-          &nbsp;&nbsp;
-          <a href="">How Search Works</a>
+        <div class="foot-left">
+          <ul>
+              <li><a href="">Advertising</a></li>
+              <li><a href="">Business</a></li>
+              <li><a href="">How Search Works</a></li>
+          </ul>
         </div>
-        <div id="foot-right">
-          <a href="">Privacy</a>
-          &nbsp;&nbsp;
-          <a href="">Terms</a>
-          &nbsp;&nbsp;
-          <a href="">Settings</a>
+        <div class="foot-right">
+          <ul>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Settings</a></li>
+          </ul>
         </div>
       </div>
     </div>
