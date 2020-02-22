@@ -87,7 +87,7 @@ ul {
 .buttons {
   padding: 18px 0px 0px;
 }
-.buttons .input{
+.buttons input{
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 4px;
